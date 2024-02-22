@@ -29,13 +29,15 @@ defmodule FaunaRepo.MixProject do
   defp deps do
     [
       {:httpoison, "~> 2.2"},
-      {:jason, "~> 1.4"}
+      {:jason, "~> 1.4"},
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 
   defp package do
     [
       maintainers: ["Yuliya Petrunkina", "Shadid Haque"],
+      licenses: ["MIT"],
       links: %{"GitHub" => @source_url}
     ]
   end
