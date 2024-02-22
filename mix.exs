@@ -36,7 +36,6 @@ defmodule FaunaRepo.MixProject do
   defp package do
     [
       maintainers: ["Yuliya Petrunkina", "Shadid Haque"],
-      licenses: ["MIT"],
       links: %{"GitHub" => @source_url}
     ]
   end
