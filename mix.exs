@@ -7,7 +7,7 @@ defmodule FaunaRepo.MixProject do
   def project do
     [
       app: :fauna_repo,
-      version: "0.1.0",
+      version: "0.1.2",
       elixir: "~> 1.16",
       name: "Fauna Repo",
       description: @description,

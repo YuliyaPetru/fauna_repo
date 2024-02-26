@@ -3,8 +3,8 @@ defmodule Faunarepo do
 
   @fauna_url System.get_env("FAUNA_URL") || "https://db.fauna.com/query/1"
 
-  def query(fql_expression) do
-    key = System.get_env("FAUNA_KEY")
+  def query(fql_expression, key \\ nil) do
+    key = key || System.get_env("FAUNA_KEY")
 
     headers = [
       {"accept", "application/json, text/plain, */*"},
